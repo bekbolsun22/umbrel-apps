@@ -12,8 +12,8 @@ services:
     web:
         image: bekbolsun22/test:latest@sha256:4a38202f57295c34a69b15080cc638e0e924a1632c8f7b92a8c4ef9b41b9d0f5
         restart: on-failure
-        stop_grace_period: 1m
-        ports:
+        stop_grace_period:
+            1m
             # You do not need to expose the port that your app's web server is listening on if you're using the app_proxy service.
             # This is handled by the APP_HOST and APP_PORT environment variables in the service above.
             #
